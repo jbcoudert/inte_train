@@ -1,0 +1,16 @@
+J'ai commencé par divisé en 2 colonnes ma page (bande à gauche et page).
+
+Ensuite j'ai fait la bande noire en haut de page puis la nav avec ses col et row.
+
+Après je me suis penché sur le responsive de celle-ci --> passé la bande de gauche en haut et faire disparaitre la bande noire ainsi que la bande gauche de la nav. De plus j'ai mis les menu et le boutton a col-12, tout ca pour le tel.
+
+
+C'est alors que je me suis lancé dans le redouté main cependant j'était prêt à en découdre!! j'ai donc commencé par placé la 1er partie de celui ci ainsi qu'un full col-12 pour mobile. Ca à marcher je me suis dit que la scnd partie allé se faire avec la même stratégie, mais... 
+J'ai essuiyai un gros revers me forcant à me réfugier dans mes retranchement...
+Go farm les recherches pour faire 5 col en bootstrap, je revint vers cette 2eme partie avec de meilleurs connaissances sur celui-ci et j'ai réussit à le vaincre partielement le laissant agoniser en space-between.
+Bizarrement le 3ème boss du main était easy, ca n'envisageait rien de bon, c'est alors que j'arriva en face du last boss qui était assez imposant, en effet il avais fusionné avec toutes les anciennes parties. Il avais l'air dur  mais pas impossible, je me suis armé de courage et sus à la dernière partie!!!!
+
+ 
+
+
+

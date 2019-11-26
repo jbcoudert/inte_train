@@ -1,0 +1,126 @@
+.aside {
+    width: 3%;
+    background-color:#e2422e;
+}
+.page {
+    width: 97%;
+}
+.header {
+    .bHaut {
+        background-color: rgb(14, 14, 14);
+    }
+    .hNav {
+        background-color: rgb(61, 61, 61);
+    }
+    .gNav {
+        display: flex !important;
+        justify-content: flex-end !important;
+        flex-direction: column;
+        background-color: rgb(194, 194, 194);
+    }
+    .menu1 {
+        background-color: #96c30f;
+    }
+    .menu2 {
+        background-color: #3eaec1;
+    }
+    .menu3 {
+        background-color: #f37234;
+    }
+    .menu4 {
+        background-color: #9c67d1;
+    }
+    .bNav {
+        img {
+            width: 100%;
+        }
+    }
+    .btn {
+        color: black;
+        background-color: #f0f0f0;
+        border-radius: 0 !important; 
+        width: 100% !important;
+    }
+    .search {
+        background-color: gray;
+    }
+}
+
+.main {
+    .gray {
+        background-color: lightgray;
+    }
+    .five {
+        display: flex;
+        width: 100%;
+    }
+    .fiveCol {
+        width: 20%;
+        background-color: gray;
+        &:nth-child(2n+1) {
+            background-color: lightgray;
+        }
+    }
+    .cG {
+        background-color: lightgray;
+    }
+    .mosaic {
+        background-color: gray;
+        &:nth-child(2n+1) {
+            background-color: rgb(49, 49, 49);
+        }
+    }
+    .mosaic2 {
+        background-color:  rgb(49, 49, 49);
+        &:nth-child(2n+1) {
+            background-color: gray;
+        }
+    }
+
+ 
+}
+.seven {
+    display: flex;
+    width: 100%;
+}
+.sevenCol {
+    width: 14.285%;
+    background-color: gray;
+    &:nth-child(2n+1) {
+        background-color: lightgray;
+    }
+}
+.cell {
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 33.3333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  @media screen and (max-width : 767px) {
+      .aside {
+          width: 100%;
+      }
+      .page {
+          width: 100%;
+      }
+      .hNav {
+          display: none;
+      }
+      .main {
+          .fiveCol {
+              width: 100%;
+          }
+      }
+          .five {
+              .fiveCol {
+                  width: 100%;
+              }
+          }
+
+      .sevenCol {
+          width: 100%;
+      }
+  }
+
