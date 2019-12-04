@@ -24,7 +24,7 @@
 
 
 .aside {
-    // height: 87rem;
+    height: 91rem;
     width: 3%;
     background-color:#e2422e;
     a {
@@ -128,6 +128,12 @@
         @include borderBottom(#e0422e);
 
     }
+    h2 {
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+        font-weight: bolder;
+        color: #e2422e;
+    }
     .mainTop {
         .card {
             margin: 0.3rem;
@@ -138,10 +144,19 @@
                 font-size: 1rem;
             }
         }
+        // .bottom {
+        // }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
         .commerce {
             span {
                 @include borderBottom(#9ec315)
             }
+
         }
         .loisirs {
             span {
@@ -154,10 +169,6 @@
             }
         }
     }
-    .five {
-        display: flex;
-        width: 100%;
-    }
     .fiveCol {
         width: 20%;
         a {
@@ -166,6 +177,7 @@
             font-size: 0.6rem;
         }
         .hoverImg {
+            color: black;
             .overlayImg {
                 display: none;
             }
@@ -267,6 +279,27 @@
             color: white;
         }
     }
+    .five {
+        background-color: #868689;
+        display: flex;
+        width: 100%;
+        .fiveCol {
+            color: white;
+            font-size: 0.8rem;
+            li {
+                list-style: none;
+                margin: 0.2rem 0;
+                &:nth-child(1) {
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+                    font-weight: bolder;
+                }
+                i{
+                    margin-right: 0.8rem;
+                }
+            }
+        }
+    }
 }
 .seven {
     display: flex;
@@ -289,6 +322,9 @@
 
   @media screen and (max-width : 767px) {
       .aside {
+          display: flex;
+          justify-content: space-around;
+          height: 5rem;
           width: 100%;
       }
       .page {
@@ -303,8 +339,14 @@
           }
       }
           .five {
+
               .fiveCol {
-                  width: 100%;
+                  text-align: center;
+                  max-width: 95%;
+                  margin: auto;
+                  ul {
+                      padding: 0;
+                  }
               }
           }
 
@@ -316,6 +358,9 @@
     //   * {margin:0; padding: 0;}
     .container {
         max-width: 1024px;
+    }
+    .aside {
+        height: 100rem;
     }
     .marg {
         margin-right: 5rem;

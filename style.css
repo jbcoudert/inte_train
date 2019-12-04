@@ -1,4 +1,5 @@
 .aside {
+  height: 91rem;
   width: 3%;
   background-color: #e2422e; }
   .aside a {
@@ -70,39 +71,48 @@
   background-color: white; }
   .main span {
     border-bottom: 3px solid #e0422e; }
+  .main h2 {
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+    color: #e2422e; }
   .main .mainTop .card {
     margin: 0.3rem; }
     .main .mainTop .card:not(.card2) {
       height: 98.5%; }
     .main .mainTop .card h5 {
       font-size: 1rem; }
+  .main .mainTop .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; }
   .main .mainTop .commerce span {
     border-bottom: 3px solid #9ec315; }
   .main .mainTop .loisirs span {
     border-bottom: 3px solid #f36e34; }
   .main .mainTop .culture span {
     border-bottom: 3px solid #3daec2; }
-  .main .five {
-    display: flex;
-    width: 100%; }
   .main .fiveCol {
     width: 20%; }
     .main .fiveCol a {
       text-decoration: none;
       color: black;
       font-size: 0.6rem; }
-    .main .fiveCol .hoverImg .overlayImg {
-      display: none; }
-    .main .fiveCol .hoverImg:hover {
-      background-color: black;
-      color: white; }
-      .main .fiveCol .hoverImg:hover a {
+    .main .fiveCol .hoverImg {
+      color: black; }
+      .main .fiveCol .hoverImg .overlayImg {
+        display: none; }
+      .main .fiveCol .hoverImg:hover {
+        background-color: black;
         color: white; }
-      .main .fiveCol .hoverImg:hover img {
-        opacity: 20%;
-        background-color: black; }
-      .main .fiveCol .hoverImg:hover .overlayImg {
-        display: block; }
+        .main .fiveCol .hoverImg:hover a {
+          color: white; }
+        .main .fiveCol .hoverImg:hover img {
+          opacity: 20%;
+          background-color: black; }
+        .main .fiveCol .hoverImg:hover .overlayImg {
+          display: block; }
   .main .photo {
     margin: 0.5rem; }
     .main .photo .txt {
@@ -202,6 +212,22 @@
       border-radius: 0;
       text-decoration: none;
       color: white; }
+  .main .five {
+    background-color: #868689;
+    display: flex;
+    width: 100%; }
+    .main .five .fiveCol {
+      color: white;
+      font-size: 0.8rem; }
+      .main .five .fiveCol li {
+        list-style: none;
+        margin: 0.2rem 0; }
+        .main .five .fiveCol li:nth-child(1) {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          font-weight: bolder; }
+        .main .five .fiveCol li i {
+          margin-right: 0.8rem; }
 
 .seven {
   display: flex;
@@ -220,6 +246,9 @@
 
 @media screen and (max-width: 767px) {
   .aside {
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
     width: 100%; }
 
   .page {
@@ -232,13 +261,20 @@
     width: 100%; }
 
   .five .fiveCol {
-    width: 100%; }
+    text-align: center;
+    max-width: 95%;
+    margin: auto; }
+    .five .fiveCol ul {
+      padding: 0; }
 
   .sevenCol {
     width: 100%; } }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     max-width: 1024px; }
+
+  .aside {
+    height: 100rem; }
 
   .marg {
     margin-right: 5rem; } }
