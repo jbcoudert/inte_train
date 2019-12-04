@@ -1,6 +1,22 @@
+@mixin borderBottom($color){
+    border-bottom: 3px solid $color;
+}
+
+
+
 .aside {
     width: 3%;
     background-color:#e2422e;
+    a {
+        text-decoration: none;
+        margin: 0.3rem 0;
+        .fab {
+            color: white;
+        }
+        .fas {
+            color: white;
+        }
+    }
 }
 .page {
     width: 97%;
@@ -8,9 +24,31 @@
 .header {
     .bHaut {
         background-color: rgb(14, 14, 14);
+
     }
     .hNav {
-        background-color: rgb(61, 61, 61);
+        background-color: #efefef;
+        .hNavSub {
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+            .drop {
+                display: flex;
+                justify-content: center;
+                
+            }
+            .dropdown {
+                width: 50%;
+                a {
+                    height: 80%;
+                    margin-top: 0.2rem;
+                    font-size: 0.8rem;
+                }
+                .dropdown-menu {
+                    width: 50%;
+                }
+            }
+        }
     }
     .gNav {
         display: flex !important;
@@ -30,6 +68,11 @@
     .menu4 {
         background-color: #9c67d1;
     }
+    h2 {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+        font-weight: bolder;
+    }
     .bNav {
         img {
             width: 100%;
@@ -42,13 +85,45 @@
         width: 100% !important;
     }
     .search {
-        background-color: gray;
+        color: #515151;
+        background-color: #f0f0f0;
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 1rem;
     }
 }
 
 .main {
-    .gray {
-        background-color: lightgray;
+    background-color: white;
+    span {
+        @include borderBottom(#e0422e);
+
+    }
+    .mainTop {
+        .card {
+            margin: 0.3rem;
+            &:not(.card2) {
+                height: 98.5%;
+            }
+            h5 {
+                font-size: 1rem;
+            }
+        }
+        .commerce {
+            span {
+                @include borderBottom(#9ec315)
+            }
+        }
+        .loisirs {
+            span {
+                @include borderBottom(#f36e34)
+            }
+        }
+        .culture {
+            span {
+                @include borderBottom(#3daec2)
+            }
+        }
     }
     .five {
         display: flex;
@@ -56,27 +131,76 @@
     }
     .fiveCol {
         width: 20%;
-        background-color: gray;
-        &:nth-child(2n+1) {
-            background-color: lightgray;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.6rem;
+        }
+        .hoverImg {
+            .overlayImg {
+                display: none;
+            }
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    a {
+                        color: white;
+                    }
+                    img {
+                        opacity: 20%;
+                        background-color: black;
+                    }
+                    .overlayImg {
+                        display: block;
+                        // p {
+                        //     color: black;
+                        // }
+                    }
+                }
         }
     }
-    .cG {
-        background-color: lightgray;
+    .photo {
+        margin: 0.5rem;
+        .txt {
+            padding-top: 2.5rem;
+            font-size: 0.7rem;
+            font-weight: bolder;
+        }
+    }
+    .zoom {
+        .overlayImg {
+            display: none;
+            height: 70%;
+            width: 70%;
+        }
+            &:hover {
+                background-color: black;
+                color: white;
+                a {
+                    color: white;
+                }
+                img {
+                    background-color: black;
+                }
+                .overlayImg {
+                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: auto;
+                    background-color: #c13726;
+                    opacity: 80%;
+                    // align-items: center;
+                }
+            }
     }
     .mosaic {
-        background-color: gray;
-        &:nth-child(2n+1) {
-            background-color: rgb(49, 49, 49);
-        }
+        opacity: 80%;
+        background-color: black;
     }
-    .mosaic2 {
-        background-color:  rgb(49, 49, 49);
-        &:nth-child(2n+1) {
-            background-color: gray;
-        }
+    p {
+        font-size: 0.8rem;
     }
-
  
 }
 .seven {

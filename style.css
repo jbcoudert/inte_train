@@ -1,6 +1,13 @@
 .aside {
   width: 3%;
   background-color: #e2422e; }
+  .aside a {
+    text-decoration: none;
+    margin: 0.3rem 0; }
+    .aside a .fab {
+      color: white; }
+    .aside a .fas {
+      color: white; }
 
 .page {
   width: 97%; }
@@ -8,7 +15,22 @@
 .header .bHaut {
   background-color: #0e0e0e; }
 .header .hNav {
-  background-color: #3d3d3d; }
+  background-color: #efefef; }
+  .header .hNav .hNavSub {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem; }
+    .header .hNav .hNavSub .drop {
+      display: flex;
+      justify-content: center; }
+    .header .hNav .hNavSub .dropdown {
+      width: 50%; }
+      .header .hNav .hNavSub .dropdown a {
+        height: 80%;
+        margin-top: 0.2rem;
+        font-size: 0.8rem; }
+      .header .hNav .hNavSub .dropdown .dropdown-menu {
+        width: 50%; }
 .header .gNav {
   display: flex !important;
   justify-content: flex-end !important;
@@ -22,6 +44,10 @@
   background-color: #f37234; }
 .header .menu4 {
   background-color: #9c67d1; }
+.header h2 {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: bolder; }
 .header .bNav img {
   width: 100%; }
 .header .btn {
@@ -30,28 +56,79 @@
   border-radius: 0 !important;
   width: 100% !important; }
 .header .search {
-  background-color: gray; }
+  color: #515151;
+  background-color: #f0f0f0;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1rem; }
 
-.main .gray {
-  background-color: lightgray; }
-.main .five {
-  display: flex;
-  width: 100%; }
-.main .fiveCol {
-  width: 20%;
-  background-color: gray; }
-  .main .fiveCol:nth-child(2n+1) {
-    background-color: lightgray; }
-.main .cG {
-  background-color: lightgray; }
-.main .mosaic {
-  background-color: gray; }
-  .main .mosaic:nth-child(2n+1) {
-    background-color: #313131; }
-.main .mosaic2 {
-  background-color: #313131; }
-  .main .mosaic2:nth-child(2n+1) {
-    background-color: gray; }
+.main {
+  background-color: white; }
+  .main span {
+    border-bottom: 3px solid #e0422e; }
+  .main .mainTop .card {
+    margin: 0.3rem; }
+    .main .mainTop .card:not(.card2) {
+      height: 98.5%; }
+    .main .mainTop .card h5 {
+      font-size: 1rem; }
+  .main .mainTop .commerce span {
+    border-bottom: 3px solid #9ec315; }
+  .main .mainTop .loisirs span {
+    border-bottom: 3px solid #f36e34; }
+  .main .mainTop .culture span {
+    border-bottom: 3px solid #3daec2; }
+  .main .five {
+    display: flex;
+    width: 100%; }
+  .main .fiveCol {
+    width: 20%; }
+    .main .fiveCol a {
+      text-decoration: none;
+      color: black;
+      font-size: 0.6rem; }
+    .main .fiveCol .hoverImg .overlayImg {
+      display: none; }
+    .main .fiveCol .hoverImg:hover {
+      background-color: black;
+      color: white; }
+      .main .fiveCol .hoverImg:hover a {
+        color: white; }
+      .main .fiveCol .hoverImg:hover img {
+        opacity: 20%;
+        background-color: black; }
+      .main .fiveCol .hoverImg:hover .overlayImg {
+        display: block; }
+  .main .photo {
+    margin: 0.5rem; }
+    .main .photo .txt {
+      padding-top: 2.5rem;
+      font-size: 0.7rem;
+      font-weight: bolder; }
+  .main .zoom .overlayImg {
+    display: none;
+    height: 70%;
+    width: 70%; }
+  .main .zoom:hover {
+    background-color: black;
+    color: white; }
+    .main .zoom:hover a {
+      color: white; }
+    .main .zoom:hover img {
+      background-color: black; }
+    .main .zoom:hover .overlayImg {
+      display: block;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: auto;
+      background-color: #c13726;
+      opacity: 80%; }
+  .main .mosaic {
+    opacity: 80%;
+    background-color: black; }
+  .main p {
+    font-size: 0.8rem; }
 
 .seven {
   display: flex;
