@@ -12,6 +12,10 @@
 .page {
   width: 97%; }
 
+.header .accord .accordion {
+  width: 100%; }
+.header .accord .card-body {
+  font-size: 0.8rem; }
 .header .bHaut {
   background-color: #0e0e0e; }
 .header .hNav {
@@ -129,6 +133,75 @@
     background-color: black; }
   .main p {
     font-size: 0.8rem; }
+  .main .mosaic2 .card1 .topCard {
+    background-color: #308080;
+    box-shadow: inset 0px 0px 100px;
+    height: 10rem; }
+  .main .mosaic2 .card1 .card-body {
+    background-color: #308080;
+    color: white; }
+    .main .mosaic2 .card1 .card-body a {
+      width: 100%;
+      text-decoration: none;
+      color: white;
+      font-size: 0.65rem; }
+  .main .mosaic2 .card2 .topCard {
+    background-color: #e2422e;
+    box-shadow: inset 0px 0px 100px;
+    height: 10rem; }
+  .main .mosaic2 .card2 .card-body {
+    background-color: #e2422e;
+    color: white; }
+    .main .mosaic2 .card2 .card-body a {
+      width: 100%;
+      text-decoration: none;
+      color: white;
+      font-size: 0.65rem; }
+  .main .mosaic2 .card3 .topCard {
+    background-color: #89b5a4;
+    box-shadow: inset 0px 0px 100px;
+    height: 10rem; }
+  .main .mosaic2 .card3 .card-body {
+    background-color: #89b5a4;
+    color: white; }
+    .main .mosaic2 .card3 .card-body a {
+      width: 100%;
+      text-decoration: none;
+      color: white;
+      font-size: 0.65rem; }
+  .main .mosaic2 .card4 .topCard {
+    background-color: #55616f;
+    box-shadow: inset 0px 0px 100px;
+    height: 10rem; }
+  .main .mosaic2 .card4 .card-body {
+    background-color: #55616f;
+    color: white; }
+    .main .mosaic2 .card4 .card-body a {
+      width: 100%;
+      text-decoration: none;
+      color: white;
+      font-size: 0.65rem; }
+  .main .newsletter {
+    line-height: 0.5rem;
+    background-color: #308080;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main .newsletter h6 {
+      padding-top: 0.5rem; }
+    .main .newsletter input {
+      border: none;
+      border-bottom: solid 1.5px #4c8e95;
+      background-color: #308080;
+      outline: none; }
+      .main .newsletter input::placeholder {
+        color: #2e3136; }
+    .main .newsletter a {
+      border: solid 2px white;
+      border-radius: 0;
+      text-decoration: none;
+      color: white; }
 
 .seven {
   display: flex;
@@ -136,9 +209,7 @@
 
 .sevenCol {
   width: 14.285%;
-  background-color: gray; }
-  .sevenCol:nth-child(2n+1) {
-    background-color: lightgray; }
+  background-color: #868689; }
 
 .cell {
   border: 1px solid black;
@@ -165,5 +236,11 @@
 
   .sevenCol {
     width: 100%; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 1024px; }
+
+  .marg {
+    margin-right: 5rem; } }
 
 /*# sourceMappingURL=style.css.map */

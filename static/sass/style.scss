@@ -1,10 +1,30 @@
 @mixin borderBottom($color){
     border-bottom: 3px solid $color;
 }
-
+@mixin cardBody ($bgcolor) {
+    
+}
+@mixin shadowCard($bgcolor) {
+    .topCard {
+        background-color: $bgcolor;
+        box-shadow: inset 0px 0px 100px;
+        height: 10rem;
+    }
+    .card-body {
+        background-color: $bgcolor;
+        color: white;
+        a {
+            width: 100%;
+            text-decoration: none;
+            color: white;
+            font-size: 0.65rem;
+        }
+    }
+}
 
 
 .aside {
+    // height: 87rem;
     width: 3%;
     background-color:#e2422e;
     a {
@@ -22,6 +42,15 @@
     width: 97%;
 }
 .header {
+    .accord {
+        .accordion {
+            width: 100%;
+
+        }
+        .card-body {
+            font-size: 0.8rem;
+        }
+    }
     .bHaut {
         background-color: rgb(14, 14, 14);
 
@@ -140,23 +169,20 @@
             .overlayImg {
                 display: none;
             }
-                &:hover {
-                    background-color: black;
+            &:hover {
+                background-color: black;
+                color: white;
+                a {
                     color: white;
-                    a {
-                        color: white;
-                    }
-                    img {
-                        opacity: 20%;
-                        background-color: black;
-                    }
-                    .overlayImg {
-                        display: block;
-                        // p {
-                        //     color: black;
-                        // }
-                    }
                 }
+                img {
+                    opacity: 20%;
+                    background-color: black;
+                }
+                .overlayImg {
+                    display: block;
+                }
+            }
         }
     }
     .photo {
@@ -173,26 +199,26 @@
             height: 70%;
             width: 70%;
         }
-            &:hover {
-                background-color: black;
+        &:hover {
+            background-color: black;
+            color: white;
+            a {
                 color: white;
-                a {
-                    color: white;
-                }
-                img {
-                    background-color: black;
-                }
-                .overlayImg {
-                    display: block;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    margin: auto;
-                    background-color: #c13726;
-                    opacity: 80%;
-                    // align-items: center;
-                }
             }
+            img {
+                background-color: black;
+            }
+            .overlayImg {
+                display: block;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: auto;
+                background-color: #c13726;
+                opacity: 80%;
+                // align-items: center;
+            }
+        }
     }
     .mosaic {
         opacity: 80%;
@@ -201,7 +227,46 @@
     p {
         font-size: 0.8rem;
     }
- 
+    .mosaic2 {
+        .card1 {
+            @include shadowCard(#308080);
+        }
+        .card2 {
+            @include shadowCard(#e2422e);
+        }
+        .card3 {
+            @include shadowCard(#89b5a4);
+        }
+        .card4 {
+            @include shadowCard(#55616f);
+        }
+    }
+    .newsletter {
+        line-height: 0.5rem;
+        background-color: #308080;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h6 {
+            padding-top: 0.5rem;
+        }
+        input {
+            border: none;
+            border-bottom: solid 1.5px #4c8e95;
+            background-color: #308080;
+            outline: none;
+            &::placeholder {
+                color: #2e3136;
+            }
+        }
+        a {
+            border: solid 2px white;
+            border-radius: 0;
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
 .seven {
     display: flex;
@@ -209,10 +274,10 @@
 }
 .sevenCol {
     width: 14.285%;
-    background-color: gray;
-    &:nth-child(2n+1) {
-        background-color: lightgray;
-    }
+    background-color: #868689;
+    // &:nth-child(2n+1) {
+    //     background-color: lightgray;
+    // }
 }
 .cell {
     border: 1px solid black;
@@ -247,4 +312,13 @@
           width: 100%;
       }
   }
+  @media (min-width: 768px) and (max-width : 1023px) {
+    //   * {margin:0; padding: 0;}
+    .container {
+        max-width: 1024px;
+    }
+    .marg {
+        margin-right: 5rem;
+    }
+}
 
